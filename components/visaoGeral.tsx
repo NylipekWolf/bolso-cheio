@@ -20,7 +20,7 @@ export default function VisaoGeral() {
       icon: "add-circle-outline",
       valores: { real: 100, previsto: 100 },
       label: "Receitas",
-      color: "#D1FAE5",
+      color: "#FECACA",
     },
     {
       icon: "remove-circle-outline",

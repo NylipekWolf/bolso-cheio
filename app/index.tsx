@@ -9,9 +9,10 @@ import {
   FlatList,
   Dimensions,
 } from "react-native";
-import { Button, Icon } from "react-native-paper";
+import { Button, Dialog, Icon } from "react-native-paper";
 import { listaMeses } from "@/utils/date.utils";
 import VisaoGeral from "@/components/visaoGeral";
+import AddNota from "@/components/addNota";
 const { width } = Dimensions.get("screen");
 export default function Index() {
   const [mes, setMes] = useState("Janeiro");
@@ -108,7 +109,8 @@ export default function Index() {
           )}
         ></FlatList>
 
-        <VisaoGeral></VisaoGeral>
+        {<VisaoGeral></VisaoGeral>}
+        {<AddNota></AddNota>}
       </ScrollView>
     </View>
   );
